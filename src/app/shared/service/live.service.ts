@@ -10,10 +10,11 @@ export class LiveService {
 
   apiUrl = 'http://localhost:8080/lives';
 
+  // use for POST requests
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json'
-    });
+    })
   };
 
   constructor(
